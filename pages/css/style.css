@@ -1,0 +1,74 @@
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.info{
+    margin:10px auto;
+    border: solid 2px #000;
+    padding: 10px;
+}
+
+#home{
+    height: 85vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/hero.jpg'); 
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-container{
+    height: 100% !important;
+    position: relative;
+}
+
+.hero-section-content{
+    position: absolute;
+    left:25%;
+    top: 20%;
+}
+
+.small-header{
+    font-size:1.7rem;
+    color: #fff;
+}
+
+.large-header{
+    font-size: 5.2rem;
+    color:#fff;
+    letter-spacing: 2px;
+}
+
+.donate-header-btn{
+    color:#fff;
+    height: 50px;
+    width: 200px;
+    font-size: 1.3rem;
+    margin:auto;
+    border: solid 3px #fff;
+    color: #fff !important;
+}
+
+.donate-header-btn:hover{
+    background: #fff;
+    color:#000 !important;
+}
+
+#contact {
+    min-height: 50vh;
+}
+
+.contact-info{
+    display: flex;
+}
+
+.label, .value{
+    font-size: 1.7rem;
+}
+
+.follow-gallery{
+    text-decoration: none;
+}
+
+.img-gallery{
+    margin-top: 8px;
+    vertical-align: middle;
+}
