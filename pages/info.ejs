@@ -14,9 +14,59 @@
 
     <!-- ADD YOUR GALLERY ENDS -->
     
+
+    <!-- HERO SECTION STARTS -->
+    <div class="container-fluid bg-light py-3" id="info-header">
+        <div class="row">
+            <!-- -->
+            <div class="col-6 text-center mt-5">
+                <h2 class="display-4 mt-5">
+                    Graphic Era Educational<br>
+                    Society 
+                </h2>
+                <h3 class="display-5">
+                    Donation Request Form
+                </h3>
+            </div>
+
+            <!-- SIDE IMAGE SECTION -->
+            <div class="col-6">
+                <!-- ADD IMAGE PART HERE -->
+                Image will be here
+            </div>
+        </div>
+    </div>
+    <!-- HERO SECTION ENDS -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <span class="label">Name : </span>
+                <span class="value">Graphic Era Educational Society</span>
+            </div>
+            <div class="col-7">
+                <span class="label">A/C No : </span>
+                <span class="value">1175002100006614</span>
+            </div>
+            <div class="col-7">
+                <span class="label">IFSC Code : </span>
+                <span class="value">PUNB0602000</span>
+            </div>
+            <div class="col-7">
+                <span class="label">Bank : </span>
+                <span class="value">PUNJAB NATIONAL BANK</span>
+            </div>
+            <div class="col-7">
+                <span class="label">Branch : </span>
+                <span class="value">Clement Town, Dehradun</span>
+            </div>
+        </div>
+    </div>
+
+
     
     <!-- FORM FOR SUBMITTING INFO STARTS-->
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-10">
                 <form action="/submit-info" method="POST">
@@ -68,6 +118,11 @@
                                 <input type="radio" class="form-check-input" name="mode" value="Online Transfer">Online Transfer
                             </label>
                         </div>
+                        <div class="radio">
+                            <label class="form-check-label">
+                                <input type="radio" id="modal-radio-button" class="form-check-input" name="mode" value="UPI">UPI
+                            </label>
+                        </div>
                     </div>
 
                     <div class="form-group">
@@ -88,6 +143,31 @@
         </div>
     </div>
     <!-- FORM FOR SUBMITTING INFO ENDS -->
+
+
+
+
+
+    <!-- UPI MODAL STARTS -->
+    <div class="modal fade" id="upiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">GEU UPI</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center py-3">
+              <img height="400px" width="400px" class="img img-fluid" src="img/upi.jpeg">
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- UPI MODAL ENDS -->
+
+
+
 
 
 

@@ -41,7 +41,7 @@ app.get('/', (req, res)=>{
 })
 
 app.get('/info',(req,res)=>{
-    res.send('info')
+    res.render('info')
 })
 
 app.post('/submit-info', (req, res)=>{
@@ -52,7 +52,7 @@ app.post('/submit-info', (req, res)=>{
    return newUserData.save()
         .then(()=>{
             console.log("USER ADDED SUCCESSFULLY")
-            res.redirect('/list-info')
+            res.redirect('/')
         })
         .catch((err)=>{
             console.log(err)
@@ -61,12 +61,12 @@ app.post('/submit-info', (req, res)=>{
 })
 
 
-app.get('/list-info', (req, res)=>{
-    console.log("LIST INFO PAGE")
-    return User.find({}).then(data=>{
-        res.render('list-donors', {data: data})
-    })
-})
+// app.get('/list-info', (req, res)=>{
+//     console.log("LIST INFO PAGE")
+//     return User.find({}).then(data=>{
+//         res.render('list-donors', {data: data})
+//     })
+// })
 
 
 app.get('/gallery', (req, res)=>{
